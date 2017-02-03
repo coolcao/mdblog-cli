@@ -23,13 +23,13 @@ let existFile = function (path) {
 let newFile = function () {
     let file = process.argv[3];
     let fullPath = currentPath + '/' + file + '.md';
-    let template = `<!--
+    let template = `<!--mdblog
 {
     "title":"${file}",
-    "data":${new Date()},
+    "date":${JSON.stringify(new Date())},
     "tag":[]
 }
--->`;
+mdblog-->`;
 
     if(existFile(fullPath)){
         console.log(`${fullPath} 文件已存在`);
