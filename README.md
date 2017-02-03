@@ -4,6 +4,7 @@ mdblog命令行工具，用于生成mdblog特定格式的md文件。
 ### 安装
 
 * `npm link`:链接命令
+* `sudo npm rm --global mdblog-cli`:全局删除该命令
 
 ### 使用说明：
 
